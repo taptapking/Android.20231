@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
                 val result = param1 + param2;
                 textContent.text = result.toString();
             } catch (ex: Exception) {
-                textContent.text = R.string.error.toString();
+                textContent.text = R.string.error.toString()
             }
         }
     }
