@@ -4,6 +4,11 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("C:\\Users\\Remilia Scarlet\\.android\\debug.keystore")
+        }
+    }
     namespace = "vn.edu.hust.firstapp"
     compileSdk = 33
 
@@ -31,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildToolsVersion = "33.0.1"
 }
 
 dependencies {
